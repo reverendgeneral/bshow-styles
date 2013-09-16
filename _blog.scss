@@ -1,0 +1,19 @@
+/* =Blog
+----------------------------------------------- */
+
+.blog {
+
+	article {
+		background-color: $grey5;
+		border-bottom: 10px solid $grey2;
+		margin: 1.5em auto 2.5em;
+		max-width: 1140px;
+		overflow: auto;
+		width: 95%;
+		@include box-shadow($grey2);
+		&:last-child { margin: 0 auto 1.5rem; }
+
+		@media all and (max-width: 640px) { overflow: hidden; }
+	}
+
+}
