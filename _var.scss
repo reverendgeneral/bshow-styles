@@ -21,7 +21,7 @@ $green2: #31b76d; //darker green to accent green1
   line-height: $line + px;
   font-size: ($sizeValue / 10) + rem;
   line-height: ($line / 10) + rem;
-} // automatically apply rem font-size with px fallback and add 1.618 line-height. default is 16px/1.6rem+1.5
+} // automatically apply rem font-size with px fallback and add 1.618 line-height. default is 16px/1.6rem+1.618
 
 @mixin text-shadow($color){
   text-shadow:
