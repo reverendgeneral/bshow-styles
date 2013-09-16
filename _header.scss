@@ -1,0 +1,174 @@
+/* =Header
+----------------------------------------------- */
+
+// branding
+.site-header {
+  margin: 1em auto;
+  max-width: 1140px;
+  padding: 0 2.5%;
+}
+
+.site-branding {
+  display: block;
+  float: left;
+  width: 50%;
+
+  @media all and (max-width: 900px) {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.site-branding a {
+  color: $grey2;
+  font: {
+    family: $Vollkorn;
+    style: italic;
+    weight: 700;
+  }
+  text-decoration: none;
+  @include font-size(48);
+  @include text-shadow($grey3);
+  &:visited { color: $grey2; }
+  &:hover, &:focus { color: $grey3; }
+
+  @media all and (max-width: 640px) { line-height: 48px !important; }
+}
+
+.site-description {
+  color: $grey3;
+  font: {
+    family: $Sans;
+    weight: 700;
+  }
+  margin-top: -16px;
+  margin-top: -1.6rem;
+  text-transform: uppercase;
+  @include font-size(18);
+
+  @media all and (max-width: 640px) { margin-top: 0; }
+}
+
+// navigation
+.main-navigation {
+  display: block;
+  float: left;
+  width: 50%;
+
+  ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media all and (max-width: 900px) {
+      float: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media all and (max-width: 640px) { display: none; }
+  }
+
+  li {
+    float: left;
+    font: {
+      family: $Sans;
+      weight: 800;
+    }
+    position: relative;
+    text-transform: uppercase;
+    @include font-size;
+    &.current-menu-item a, &.current_page_item a {
+      background-color: $grey2;
+      color: $grey5;
+      border-radius: 5px;
+
+      @media all and (max-width: 640px) {
+        background-color: $grey2;
+        color: $grey5;
+        border-radius: 0;
+      }
+    }
+
+    @media all and (max-width: 900px) {
+      display: inline-block;
+      float: none;
+    }
+    
+    @media all and (max-width: 640px) { display: block; }
+  }
+
+  a {
+    color: $grey3;
+    display: block;
+    margin: 12px  12px 0;
+    padding: 4px 12px;
+    text-decoration: none;
+    &:hover, &:focus {
+      background-color: $grey2;
+      color: $grey5;
+      border-radius: 5px;
+    }
+    &:last-child {
+      margin: 12px 0 0 12px;
+    }
+
+    @media all and (max-width: 640px) {
+      color: $grey3;
+      display: block;
+      margin: 12px auto !important;
+      padding: 10px 0;
+      text-decoration: none;
+      text-shadow: none;
+      width: 100%;
+      &:hover, &:focus, &:active {
+        background-color: $grey1;
+        border-radius: 0;
+        color: $grey2;
+      }
+      &:last-child {
+        margin-bottom: 12px;
+      }
+    }  
+  }
+
+  @media all and (max-width: 900px) {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media all and (max-width: 640px) {
+    background-color: $grey5;
+    border-bottom: 5px solid $grey2;
+    color: $grey2;
+    display: block;
+    font-weight: 700;
+    margin: 2.5rem auto 0;
+    text-transform: uppercase;
+    @include box-shadow($grey2);
+    @include font-size(24);
+    @include text-shadow($grey4);
+  }
+
+  &.toggled .nav-menu {
+    @media all and (max-width: 640px) { display: block; }
+  }
+}
+
+/* Small menu */
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+
+  @media all and (max-width: 640px) { display: block; }
+}
