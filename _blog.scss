@@ -1,7 +1,8 @@
 /* =Blog
 ----------------------------------------------- */
 
-.blog {
+.blog,
+.single {
 
 	article {
 		background-color: $grey5;
@@ -17,30 +18,32 @@
 
 		.entry-header { display: block; }
 		
-		.entry-title {
-			padding: 2rem 0;
-			text-align: center;
-			
-			@media all and (max-width: 640px) { padding: 1rem 0 0; }
-		}
-
-		.entry-title a {
-			color: $grey2;
+		.entry-title h1,
+		h1.entry-title {
 			font: {
 				family: $Vollkorn;
 				style: italic;
 				weight: 700;
 			}
+			padding: 2rem 0;
+			text-align: center;
+			@include font-size(48);
+			@include text-shadow($grey4);
+			
+			@media all and (max-width: 640px) {
+				line-height: 48px !important;
+				padding: 1rem 0 0;
+			}
+		}
+
+		.entry-title a {
+			color: $grey2;
 			text: {
 				decoration: none;
 				transform: lowercase;
 			}
-			@include font-size(48);
-			@include text-shadow($grey4);
 			&:visited { color: $grey2; }
 			&:hover, &:focus { color: $grey3; }
-
-			@media all and (max-width: 640px) { line-height: 48px !important; }
 		}
 
 		div.entry-meta {
@@ -60,3 +63,5 @@
 		}
 	}
 }
+
+.category-design-and-development { border-bottom: 10px solid green }
