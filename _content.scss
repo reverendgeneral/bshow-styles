@@ -28,7 +28,10 @@ section {
 		@include text-shadow($grey4);
 		&:hover { cursor: default; }
 
-		@media all and (max-width: 640px) { line-height: 48px !important; }
+		@media all and (max-width: 640px) {
+			line-height: 48px !important;
+			padding: 1rem 0 0;
+		}
 	}
 
 	aside {
