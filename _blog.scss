@@ -31,7 +31,10 @@
 				style: italic;
 				weight: 700;
 			}
-			text-decoration: none;
+			text: {
+				decoration: none;
+				transform: lowercase;
+			}
 			@include font-size(48);
 			@include text-shadow($grey4);
 			&:visited { color: $grey2; }
@@ -44,9 +47,9 @@
 			color: $grey3;
 		    font: {
 		    	family: $Sans;
-		    	weight: 700;
+		    	weight: 600;
 		  	}
-		  	margin-top: -36px;
+		  	margin-top: -32px;
 		  	text: {
 				align: center;
 		  		transform: uppercase;
