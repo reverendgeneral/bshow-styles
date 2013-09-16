@@ -14,6 +14,46 @@
 		&:last-child { margin: 0 auto 1.5rem; }
 
 		@media all and (max-width: 640px) { overflow: hidden; }
-	}
 
+		.entry-header { display: block; }
+		
+		.entry-title {
+			padding: 2rem 0;
+			text-align: center;
+			
+			@media all and (max-width: 640px) { padding: 1rem 0 0; }
+		}
+
+		.entry-title a {
+			color: $grey2;
+			font: {
+				family: $Vollkorn;
+				style: italic;
+				weight: 700;
+			}
+			text-decoration: none;
+			@include font-size(48);
+			@include text-shadow($grey4);
+			&:visited { color: $grey2; }
+			&:hover, &:focus { color: $grey3; }
+
+			@media all and (max-width: 640px) { line-height: 48px !important; }
+		}
+
+		div.entry-meta {
+			color: $grey3;
+		    font: {
+		    	family: $Sans;
+		    	weight: 700;
+		  	}
+		  	margin-top: -36px;
+		  	text: {
+				align: center;
+		  		transform: uppercase;
+		  	}
+		  	@include font-size(20);
+
+		  	@media all and (max-width: 640px) { margin-top: 0; }
+		}
+	}
 }
