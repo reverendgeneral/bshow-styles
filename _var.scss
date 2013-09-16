@@ -16,12 +16,12 @@ $green1: #34cf7a; //green for primary button color
 $green2: #31b76d; //darker green to accent green1
 
 // mixins
-@mixin font-size($sizeValue: 16, $line: $sizeValue * 1.618){
+@mixin font-size($sizeValue: 16, $line: $sizeValue * 1.5){
   font-size: $sizeValue + px;
   line-height: $line + px;
   font-size: ($sizeValue / 10) + rem;
   line-height: ($line / 10) + rem;
-} // automatically apply rem font-size with px fallback and add 1.618 line-height. default is 16px/1.6rem+1.618
+} // automatically apply rem font-size with px fallback and add 1.5 line-height. default is 16px/1.6rem+1.5
 
 @mixin text-shadow($color){
   text-shadow:
