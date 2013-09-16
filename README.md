@@ -1,4 +1,4 @@
-bshow-styles
+bshow.co styles
 ============
 
-SASS StyleSheets for bshow.co
+SASS StyleSheets for http://bshow.co
