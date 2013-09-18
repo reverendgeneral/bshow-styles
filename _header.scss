@@ -83,7 +83,9 @@
     position: relative;
     text-transform: uppercase;
     @include font-size;
-    &.current-menu-item a, &.current_page_item a {
+    &.current-menu-item a,
+    &.current_page_item a,
+    &.current_page_parent a {
       background-color: $grey2;
       color: $grey5;
       border-radius: 5px;
