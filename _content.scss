@@ -76,6 +76,8 @@ section {
 			width: 90%;
 			@include font-size(20);
 		}
+		
+		p { margin-bottom: 1.5em; }
 
 		p:last-child {
 			padding: 1.5rem 0;
@@ -104,7 +106,7 @@ section {
 
 .block {
 	letter-spacing: 0.8rem;
-	margin: 0 auto 1.5rem;
+	margin: 1.5rem auto;
 	max-width: 798px;
 	padding: 0.5rem 0;
 	width: 100%;
@@ -128,7 +130,7 @@ section {
 
 .process {
 	max-width: 798px;		
-	padding: 1.5rem 0 3rem;
+	padding: 1.5rem 0;
 	text-align: center;
 	width: 90%;
 	@include font-size(20);
