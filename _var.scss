@@ -16,8 +16,9 @@ $green1: #34cf7a; //green for primary button color
 $green2: #31b76d; //darker green to accent green1
 
 	// blog category colors
-	$designdev: lighten(#E67E22, 7%); //carrot
-	$misc: #3498DB; //peter river
+	$designdev: lighten(#E67E22, 5%); //carrot
+	$misc: lighten(#3498DB, 5%); //peter river
+	$tut: lighten(#E74C3C, 5%); //alizarin
 
 // mixins
 @mixin font-size($sizeValue: 16, $line: $sizeValue * 1.5){
