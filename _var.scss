@@ -15,6 +15,10 @@ $grey5: #f5f5f5; //lightest grey - practically white
 $green1: #34cf7a; //green for primary button color
 $green2: #31b76d; //darker green to accent green1
 
+	// blog category colors
+	$designdev: lighten(#E67E22, 7%); //carrot
+	$misc: #3498DB; //peter river
+
 // mixins
 @mixin font-size($sizeValue: 16, $line: $sizeValue * 1.5){
   font-size: $sizeValue + px;
@@ -28,6 +32,6 @@ $green2: #31b76d; //darker green to accent green1
   	1px 0px 1px darken($color, 7%),
   	0px 1px 1px darken($color, 15%),
   	2px 1px 1px darken($color, 7%);
-}
+} // simple text-shadow. just enough to make the text elevate without becoming obnoxious and overwhelming
 
-@mixin box-shadow($color){ box-shadow: 0px 4px 6px $color; }
+@mixin box-shadow($color){ box-shadow: 0px 4px 6px $color; } // small box shadow to make card UI rest on the page

@@ -34,6 +34,8 @@
 				line-height: 48px !important;
 				padding: 1rem 0 0;
 			}
+
+			img { border-radius: 50%; }
 		}
 
 		.entry-title a {
@@ -64,4 +66,5 @@
 	}
 }
 
-.category-design-and-development { border-bottom: 10px solid green }
+.category-design-and-development { border-bottom: 10px solid $designdev !important; }
+.category-miscellaneous { border-bottom: 10px solid $misc !important; }
