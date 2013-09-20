@@ -149,8 +149,8 @@ section {
 
 a.green-btn {
 	background-color: $green1;
-	border-radius: 6px;
-	box-shadow: 0 5px $green2;
+	border-radius: 5px;
+	box-shadow: 0 4px $green2;
 	color: $grey5;
 	font-weight: 600;
 	padding: 6px 12px;
@@ -162,7 +162,7 @@ a.green-btn {
 	@include font-size(20);
 	&:hover, &:focus { background-color: lighten($green1, 7%); }
 	&:active {
-		box-shadow: 0 3px $green2;
+		box-shadow: 0 2px $green2;
 		top: 2px;
 	}
 	&:visited { color: $grey5; }
