@@ -151,17 +151,14 @@ section {
 
 a.green-btn {
 	background-color: $green1;
-	//border: 1px solid $green1;
 	border: {
 		top: 3px solid $green1;
 		bottom: 3px solid $green1;
 	}
 	border-radius: 5px;
-	//box-shadow: 0 3px $green2;
 	color: $grey5;
 	font-weight: 600;
 	padding: 3px 12px;
-	//position: relative;
 	text: {
 		decoration: none;
 		transform: uppercase;
@@ -177,13 +174,10 @@ a.green-btn {
 	}
 	&:active {
     	background-color: darken($green1, 3%);
-    	//border: 1px solid $green2;
     	border: {
     		top: 3px solid darken($green2, 3%);
     		bottom: 3px solid darken($green1, 3%);
     	}
-		//box-shadow: inset 0 3px darken($green2, 3%);
-		//top: 2px;
 	}
 	&:visited { color: $grey5; }
 }
