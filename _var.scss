@@ -16,9 +16,10 @@ $green1: #34cf7a; //green for primary button color
 $green2: #31b76d; //darker green to accent green1
 
 	// blog category colors
-	$designdev: lighten(#E67E22, 5%); //carrot
-	$misc: lighten(#3498DB, 5%); //peter river
-	$tut: lighten(#E74C3C, 5%); //alizarin
+	$designdev: darken(#BCA9E9, 20%); //lighter purple
+	$misc: #7C44AD; //purple
+	$tut: #69327F; //darker purple
+  $nocat: #341940; //darkest purple
 
 // mixins
 @mixin font-size($sizeValue: 16, $line: $sizeValue * 1.5){
@@ -33,6 +34,6 @@ $green2: #31b76d; //darker green to accent green1
   	1px 0px 1px darken($color, 7%),
   	0px 1px 1px darken($color, 15%),
   	2px 1px 1px darken($color, 7%);
-} // simple text-shadow. just enough to make the text elevate without becoming obnoxious and overwhelming
+} // simple text-shadow. just enough to elevate the text without becoming obnoxious and overwhelming
 
-@mixin box-shadow($color){ box-shadow: 0px 4px 6px $color; } // small box shadow to make card UI rest on the page
+@mixin box-shadow($color){ box-shadow: 0px 4px 6px $color; } // small box shadow to make card UI rest on top of the page

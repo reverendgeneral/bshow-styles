@@ -71,6 +71,9 @@
 	}
 }
 
+
+// Category-based colors for the bottom-border of cards in the blog. !important is needed to override default style
 .category-design-and-development { border-bottom: 10px solid $designdev !important; }
 .category-miscellaneous { border-bottom: 10px solid $misc !important; }
 .category-tutorial { border-bottom: 10px solid $tut !important; }
+.category-uncategorized { border-bottom: 10px solid $nocat !important; }
