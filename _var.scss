@@ -16,10 +16,10 @@ $green1: #34cf7a; //green for primary button color
 $green2: #31b76d; //darker green to accent green1
 
 	// blog category colors
-	$designdev: darken(#BCA9E9, 20%); //lighter purple
-	$misc: #7C44AD; //purple
-	$tut: #69327F; //darker purple
-  $nocat: #341940; //darkest purple
+	$designdev: #e98b39; //lighter orange
+	$misc: #e67e22; //orange
+	$tut: #d67118; //darker orange
+  $nocat: #bf6516; //darkest orange
 
 // mixins
 @mixin font-size($sizeValue: 16, $line: $sizeValue * 1.5){
