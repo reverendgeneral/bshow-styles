@@ -60,6 +60,26 @@ section {
 		margin: 1rem 2% 0 4%;
 	}
 
+	a {
+		border-bottom: 1px dashed $green2;
+		color: $green2;
+		font: {
+			family: $Sans;
+			weight: 600;
+		}
+		text-decoration: none;
+		&:hover {
+			border-bottom: 1px dashed $green1;
+			color: $green1;
+		}
+		&:focus {
+			border: 1px solid $green1;
+			color: $green1;
+		}
+		&:active { border-bottom: 1px solid $green1; }
+		&:visited { color: $green2; }
+	}
+
 	div {
 		float: right;
 		font-weight: 400;
@@ -140,13 +160,21 @@ section {
 }
 
 .bobby {
-	padding: 0 0 40px;
+	padding: 0 0 20px;
 	text-align: left;
 	&:last-child { padding: 0 0 40px; }
 
 	img { margin: 10px 1.5em 10px 0 !important;
 		@media all and (max-width: 400px) { width: 100%; }
 	}
+}
+
+.contact {
+	margin-bottom: 3.2rem;
+}
+
+.font-20 {
+	@include font-size(24);
 }
 
 a.green-btn {
@@ -166,6 +194,7 @@ a.green-btn {
 	transition: all .2s;
 	@include font-size(20);
 	&:hover, &:focus {
+		color: $grey5;
 		background-color: lighten($green1, 7%);
 		border: {
 			top: 3px solid lighten($green1, 7%);
@@ -173,6 +202,7 @@ a.green-btn {
 		}
 	}
 	&:active {
+		color: $grey5;
     	background-color: darken($green1, 3%);
     	border: {
     		top: 3px solid darken($green2, 3%);
