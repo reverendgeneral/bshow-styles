@@ -26,7 +26,10 @@ and Blueprint http://www.blueprintcss.org/
 @import url("http://fonts.googleapis.com/css?family=Vollkorn:700italic,400"); //Vollkorn
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800"); //Open Sans
 @import url("http://weloveiconfonts.com/api/?family=entypo"); //entypo
-
+@font-face {
+	font-family: icon;
+	src: url("img/icons.woff");
+}
 // Table of Contents
 
 @import "reset";

@@ -68,12 +68,8 @@ section {
 			weight: 600;
 		}
 		text-decoration: none;
-		&:hover {
+		&:hover, &:focus {
 			border-bottom: 1px dashed $green1;
-			color: $green1;
-		}
-		&:focus {
-			border: 1px solid $green1;
 			color: $green1;
 		}
 		&:active { border-bottom: 1px solid $green1; }
@@ -177,6 +173,27 @@ section {
 	@include font-size(24);
 }
 
+.social {
+	.c {
+		font-family: 'icon';
+		text-transform: lowercase;
+	}
+	a.cp, a.gh, a.gp, a.sp, a.tw {
+		border-bottom: 1px dashed $grey2;
+		color: $grey2;
+		font-weight: 700;
+		text-decoration: none;
+		@include font-size(32);
+		@include text-shadow($grey4);
+		&:visited{ color: $grey2; }
+	}
+	a.cp:hover, a.cp:focus { @include socialMedia(#ffffff); }
+	a.gh:hover, a.gh:focus { @include socialMedia(#4183c4); }
+	a.gp:hover, a.gp:focus { @include socialMedia(#dd4b39); }
+	a.sp:hover, a.sp:focus { @include socialMedia(#7AB800); }
+	a.tw:hover, a.tw:focus { @include socialMedia(#00acee); }
+}
+
 a.green-btn {
 	background-color: $green1;
 	border: {
@@ -277,9 +294,4 @@ a.green-btn {
 		}
 	}
 	span { font-weight: 600; }
-}
-
-@font-face {
-	font-family: icon;
-	src: url("img/icons.woff");
 }

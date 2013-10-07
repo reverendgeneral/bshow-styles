@@ -37,3 +37,9 @@ $green2: #31b76d; //darker green to accent green1
 } // simple text-shadow. just enough to elevate the text without becoming obnoxious and overwhelming
 
 @mixin box-shadow($color){ box-shadow: 0px 4px 6px $color; } // small box shadow to make card UI rest on top of the page
+
+@mixin socialMedia($color){
+  border-bottom: 1px dashed $color;
+  color: $color;
+  &:active { border-bottom: 1px solid $color; }
+}
